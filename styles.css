@@ -1,0 +1,758 @@
+:root {
+  --primary-color: #4a8968;
+  --secondary-color: #8b7355;
+  --accent-color: #d4a574;
+  --bg-light: #f5f1ed;
+  --text-dark: #2d2d2d;
+  --text-light: #6b6b6b;
+  --border-color: #e5ddd3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+/* Header/Navbar */
+.navbar-main {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.logo-img {
+  border-radius: 8px;
+  object-fit: contain;
+  /* Changed from cover to contain to preserve logo aspect ratio */
+  background-color: rgba(74, 137, 104, 0.05);
+  padding: 4px;
+}
+
+.brand-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.brand-tagline {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.nav-link {
+  color: var(--text-dark) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url("/light.jpeg");
+  animation: ani infinite ease-in-out 15s;
+
+  padding: 80px 20px;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.3;
+  color: white;
+  margin-bottom: 2rem;
+  opacity: 1;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--text-dark);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 40px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3a6a52;
+  border-color: #3a6a52;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(74, 137, 104, 0.2);
+}
+
+.btn-success {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  padding: 12px 40px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #3a6a52;
+  border-color: #3a6a52;
+  color: white;
+}
+
+.btn-outline-success {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Service Sections */
+.service-section {
+  padding: 80px 20px;
+}
+
+.service-image-wrapper {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.service-image {
+  transition: transform 0.5s ease;
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+}
+
+.service-content {
+  padding: 20px 0;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.service-subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.service-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: white;
+  padding: 80px 20px;
+}
+
+.experience-card {
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-placeholder {
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Promise Section */
+.promise-section {
+  background-color: white;
+  padding: 80px 20px;
+}
+
+.promise-card {
+  background-color: var(--bg-light);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.promise-card:hover {
+  background-color: #ede9e4;
+  transform: translateX(10px);
+}
+
+.promise-item {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Spirit Section */
+.spirit-section {
+  background-color: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.spirit-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.spirit-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.spirit-card-title {
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/* Rooms Section */
+.rooms-section {
+  background-color: white;
+  padding: 80px 20px;
+}
+
+.room-card {
+  transition: all 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+}
+
+.room-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.room-content {
+  padding: 20px 10px;
+}
+
+.room-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.room-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.room-subtitle {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.room-description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.room-quote {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-family: "Lora", serif;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 137, 104, 0.1);
+}
+
+.contact-info {
+  padding: 20px;
+}
+
+.info-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  margin: 0;
+  color: var(--text-light);
+}
+
+.info-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-quote {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-quote p {
+  margin: 0;
+  color: var(--text-light);
+}
+
+/* Badge */
+.badge {
+  background-color: var(--primary-color) !important;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Section Title */
+.section-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.section-description {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--text-dark);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20ba5a;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 15px;
+  }
+
+  .service-section {
+    padding: 60px 15px;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.aos-animate {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+  background: linear-gradient(135deg, #f0f5f1 0%, #eaf2eb 100%);
+  padding: 80px 0;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(45, 106, 58, 0.08);
+  border-top: 4px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(45, 106, 58, 0.12);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.clipimag {
+  overflow: hidden;
+  width: 100px;
+}
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+@keyframes ani {
+  50% {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url("/pexels-ketut-subiyanto-4908993.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  70% {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url("/IMG-20251116-WA0004.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  100% {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url("/pexels-pnw-prod-8981313.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Added responsive adjustments for full-width sections on all devices */
+
+/* Base responsive adjustments */
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 40px 0;
+    min-height: 80vh;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .service-section {
+    padding: 40px 0;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+  }
+
+  .experience-section,
+  .promise-section,
+  .spirit-section,
+  .rooms-section,
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .room-card img {
+    max-height: 300px;
+  }
+
+  .card-image-placeholder {
+    height: 250px;
+  }
+
+  .promise-card {
+    padding: 20px;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  .spirit-card {
+    padding: 20px;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .room-card img {
+    max-height: 350px;
+  }
+
+  .card-image-placeholder {
+    height: 300px;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 769px) {
+  .hero-section {
+    padding: 80px 20px;
+  }
+
+  .service-section {
+    padding: 80px 20px;
+  }
+
+  .experience-section,
+  .promise-section,
+  .spirit-section,
+  .rooms-section,
+  .contact-section {
+    padding: 80px 20px;
+  }
+}
+
+/* Ensure sections span full width */
+.hero-section,
+.service-section,
+.experience-section,
+.promise-section,
+.spirit-section,
+.rooms-section,
+.contact-section,
+.footer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Image responsiveness */
+.service-image,
+.room-card img,
+.card-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ensure gap classes work properly on all screen sizes */
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}

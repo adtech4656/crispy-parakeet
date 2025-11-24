@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Thula - Spa Mental</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="navbar-main sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-4 px-md-5">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                    <!-- Updated logo source to use the actual Maison Thula logo -->
+                    <img src="/logo.jpg" alt="Maison Thula Logo" class="logo-img" width="120" height="120">
+                    <div>
+                        <div class="brand-name">Maison Thula</div>
+                        <div class="brand-tagline">Spa Mental</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#promise">Notre Promesse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section min-vh-100 d-flex align-items-center justify-content-center text-center py-5">
+        <!-- Changed container-fluid to ensure full width with proper padding on mobile -->
+        <div class="w-100">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 px-3 px-md-4">
+                    <h1 class="hero-title mb-4" data-aos="fade-up">Chez Maison Thula, le bien-être mental n'est pas une pause... C'est un retour à ton essence par la nature et par le souffle.</h1>
+                    <p class="hero-subtitle mb-5" data-aos="fade-up" data-aos-delay="200">
+                        <em style="color:white;">Maison Thula, Spa Mental — Là où le souffle soigne. Là où tu redeviens toi.</em>
+                    </p>
+                    <a href="#contact" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="400">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sand Bath Section -->
+    <section class="service-section bg-light py-5">
+        <!-- Optimized columns for better mobile and desktop responsiveness -->
+        <div class="w-100">
+            <div class="row align-items-center g-4 g-lg-5 mx-0">
+                <div class="col-12 col-lg-6 px-3 px-md-4">
+                    <div class="service-image-wrapper"><head></head>
+                    </div>
+                </div>
+                <div style="justify-content: center;" class="col-12 col-lg-6 px-3 px-md-4">
+                    <div class="service-content">
+                        <div class="service-icon" style="overflow: hidden; border-radius: 20px;">
+                            <img style="border-radius: 20px; " src="/Image sand.png" width="850" alt="" />
+                        </div>
+                        <h2 class="service-title mb-2">Le bain de sable</h2>
+                        <p class="service-subtitle text-success mb-4">pour ancrer l'esprit</p>
+                        <p class="service-description">
+                            Une expérience d'enracinement émotionnel où le sable chaud t'accueille et te reconnecte à ton essence profonde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Silence Pavilions Section -->
+    <section class="service-section py-5">
+        <!-- Fixed container structure for consistent responsiveness -->
+        <div class="w-100">
+            <div class="row align-items-center g-4 g-lg-5 flex-row-reverse mx-0">
+                <div class="col-12 col-lg-6 px-3 px-md-4">
+                    <div class="service-image-wrapper">
+                        <img src="/IMG-20251116-WA0004.jpg" alt="Les paillotes de silence" class="img-fluid rounded service-image">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 px-3 px-md-4">
+                    <div class="service-content">
+                        <div class="service-icon">
+
+                        </div>
+                        <h2 class="service-title mb-2">Les paillotes de silence</h2>
+                        <p class="service-subtitle text-success mb-4">pour apaiser le mental</p>
+                        <p class="service-description">
+                            Des espaces sacrés de tranquillité où le silence devient un refuge et où l'esprit trouve son calme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Experience Section -->
+    <section id="experience" class="experience-section py-5">
+        <!-- Improved padding and container structure -->
+        <div class="w-100 px-3 px-md-4">
+            <div class="text-center mb-5">
+                <span class="badge bg-success mb-3">L'expérience Thula</span>
+                <h2 class="section-title mb-4">Un voyage vers soi</h2>
+                <p class="section-description">
+                    Nos parcours sensoriels et naturels ont été pensés comme une traversée intérieure, où chaque espace t'invite à te retrouver, à ton rythme.
+                </p>
+            </div>
+
+            <div style="justify-content: center;" class="row g-3 g-md-4 mt-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="experience-card" data-aos="fade-up">
+                        <div class="card-image-placeholder">
+                            <img src="/pexels-ketut-subiyanto-4908993.jpg" alt="Parcours sensoriel" class="img-fluid">
+                        </div>
+                        <h3 class="mt-3">Les parcours sensoriels</h3>
+                        <p class="section-description">
+                            Les parcours sensoriels sont des expériences immersives qui stimulent les cinq sens. Ils peuvent inclure des éléments visuels, sonores, tactiles, olfactifs et gustatifs pour créer une ambiance unique et engageante. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Promise Section -->
+    <section id="promise" class="promise-section py-5">
+        <!-- Consistent full-width container with proper padding -->
+        <div class="w-100 px-3 px-md-4">
+            <div class="text-center mb-5">
+                <span class="badge bg-success mb-3">La promesse</span>
+                <h2 class="section-title mb-4">Notre promesse : Repartir</h2>
+            </div>
+
+            <div class="row g-3 justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="promise-card">
+                        <h3 class="promise-item">Plus léger.ère mentalement</h3>
+                    </div>
+                    <div class="promise-card">
+                        <h3 class="promise-item">Plus ancré.e émotionnellement</h3>
+                    </div>
+                    <div class="promise-card">
+                        <h3 class="promise-item">Plus vivant.e spirituellement</h3>
+                    </div>
+                    <div class="promise-card">
+                        <h3 class="promise-item">Plus toi</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-4 border-top">
+                <p class="fs-5 text-muted">
+                    Chez Maison Thula, le bien-être mental n'est pas une pause... C'est un retour à ton essence par la nature et par le souffle.
+                </p>
+                <p class="fs-6 fst-italic text-success mt-3">
+                    Maison Thula, Spa Mental — Là où le souffle soigne. Là où tu redeviens toi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spirit Section -->
+    <section class="spirit-section py-5">
+        <!-- Added proper padding wrapper for mobile responsiveness -->
+        <div class="w-100 px-3 px-md-4">
+            <div class="text-center mb-5">
+                <span class="badge bg-success mb-3">L'esprit du lieu</span>
+                <h2 class="section-title mb-4">Là où le souffle soigne</h2>
+            </div>
+
+            <div class="row g-3 mb-5">
+                <div class="col-12 col-lg-10 mx-auto">
+                    <p class="spirit-text mb-4"> Maison Thula, c'est un voyage intérieur : Respirer, Ressentir, Renaître. 
+                        <p class="spirit-text fst-italic mt-3">
+                            Un rituel de renaissance spirituelle, porté par la nature, qui devient le miroir de ton âme.
+                        </p>
+                    </p>
+
+                    <div class="spirit-card mb-4">
+                        <h3 class="spirit-card-title">Le sable te ramène à ton essence</h3>
+                    </div>
+
+                    <div class="spirit-card mb-4">
+                        <h3 class="spirit-card-title">Le vent te rappelle ton souffle vital</h3>
+                    </div>
+
+                    <div class="spirit-card mb-4">
+                        <h3 class="spirit-card-title">Et le silence te révèle ta vérité intérieure</h3>
+                    </div>
+
+                    <p class="spirit-text mt-5">
+                        Maison Thula est un sanctuaire de paix intérieure, un lieu où l'esprit se repose, où l'âme respire et se reconnecte à la nature.
+                    </p>
+
+                    <a href="#contact" class="btn btn-success mt-4">La promesse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section py-5">
+        <!-- Optimized columns and padding for mobile-first responsive design -->
+        <div class="w-100 px-3 px-md-4">
+            <div class="text-center mb-5">
+                <span class="badge bg-success mb-3">Nos espaces</span>
+                <h2 class="section-title mb-4">Chaque espace est une invitation à la reconnexion à soi.</h2>
+            </div>
+
+            <div class="row g-3 g-md-4">
+                <div class="col-12 col-md-6">
+                    <div class="room-card" data-aos="fade-up">
+                        <img src="/pexels-pnw-prod-8981313.jpg" alt="La salle de ressourcement" class="img-fluid rounded">
+                        <div class="room-content mt-4">
+                            <div class="room-icon">
+                                <img class="clipimg" src="/" width="200" alt="" />
+                            </div>
+                            <h3 class="room-title">La salle de ressourcement</h3>
+                            <p class="room-subtitle text-success">pour simplement... respirer</p>
+                            <p class="room-description">
+                                Un espace dédié au souffle conscient, à la méditation et au retour à l'essentiel de ton être.
+                            </p>
+                            <p class="room-quote fst-italic">
+                                Chaque espace est une invitation à la lenteur, à l'écoute de soi et à la reconnexion profonde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="room-content">
+                            <div class="room-icon">
+                                <img class="clipimg" src="/KundaliniFlow.jpg" width="200" alt="" />
+                            </div>
+                            <h3 class="room-title">Le massage holistique</h3>
+                            <p class="room-subtitle text-success">pour libérer les émotions du chemin parcouru</p>
+                            <p class="room-description">
+                                Un soin ancestral qui libère les blocages émotionnels et permet à l'énergie intérieure de circuler librement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="justify-content: center;" class="row g-3 g-md-4 mt-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div style="align-items: center;text-align: center;" class="room-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="room-title">Inspiration Ubuntu</h3>
+                        <p class="room-subtitle text-success mb-3">La philosophie de l'humanité</p>
+                        <p class="room-description">
+                            Inspirée de la philosophie Ubuntu, Maison Thula célèbre l'humain dans sa globalité spirituelle et émotionnelle :
+                        </p>
+                        <p class="room-quote fst-italic mt-3">
+                            "Je suis parce que nous sommes, et je respire donc je guéris."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <!-- Added full-width wrapper with responsive padding -->
+        <div class="w-100 px-3 px-md-4">
+            <div class="row g-4 g-lg-5">
+                <div class="col-12 col-lg-6">
+                    <h2 class="contact-title mb-4">Votre Paix holistique commence ici 👇</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Votre nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Votre email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Votre message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg">Envoyer votre demande</button>
+                    </form>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="contact-info">
+                        <div class="info-card mb-4">
+                            <i class="fas fa-phone text-success"></i>
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:+22505654527">+ 225 05 65 45 27 68</a></p>
+                        </div>
+
+                        <div class="info-card mb-4">
+                            <i class="fas fa-map-marker-alt text-success"></i>
+                            <h3>Adresse</h3>
+                            <p>
+                                Abidjan Cocody Attoban<br>
+                                Face Direction Générale des Marchés<br>
+                                Publics
+                            </p>
+                        </div>
+
+                        <a href="https://wa.me/+22507780079" class="btn btn-outline-success w-100 mb-4">
+                            <i class="fab fa-whatsapp"></i> Contactez-nous sur WhatsApp
+                        </a>
+
+                        <div class="contact-quote">
+                            <p class="fst-italic">
+                                "Maison Thula est un sanctuaire de paix intérieure, un lieu où l'esprit se repose, où l'âme respire et se reconnecte à la nature."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="w-100 px-3 px-md-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Maison Thula - Spa Mental. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span style="color:blue; font-weight: bold; font-style: italic;">design by <a href="adtechprofessional@gmail.com">adtech</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+22507780079" class="whatsapp-btn" title="Chat with us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
